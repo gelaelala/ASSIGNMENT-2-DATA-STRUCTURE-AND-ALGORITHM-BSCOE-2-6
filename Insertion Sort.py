@@ -13,6 +13,8 @@ def insertion_sort (list):
             else: 
                 break # if the value is not less than the item being compared to, meaning the value is in the right place already
 
+            print (list) # prints out array after every swapping of element
+
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
 
