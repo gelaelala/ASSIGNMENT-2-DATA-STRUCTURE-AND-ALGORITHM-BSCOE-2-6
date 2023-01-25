@@ -16,6 +16,8 @@ def selection_sort (nums):
 
 # assigned array values to be sorted using the algorithm
 nums = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
+
+print ("Unsorted list:", nums) # prints out the unsorted list only
 selection_sort (nums)
 
-print (nums) # this will print the sorted array only
+print ("Sorted list using Selection Sort:", nums) # this will print the sorted array only
