@@ -10,6 +10,8 @@ def insertion_sort (nums):
                 list [i+1] = list[i] # shift the number in slot i right to slot i+1
                 list[i] = value # shift value left into slot i
                 i = i - 1 # to decrement i in order to compare value to something lower
+            else: 
+                break # if the value is not less than the item being compared to, meaning the value is in the right place already
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
