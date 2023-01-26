@@ -30,4 +30,8 @@ def partition (arr, left, right): # returns the index of the pivot element
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
-quick_sort(assigned_array, 0, len(assigned_array))
+print ("Unsorted list:", assigned_array)
+quick_sort(assigned_array, 0, len(assigned_array) - 1)
+
+# prints out the sorted array with the use of the algorithm
+print ("\nSorted list using Quick Sort:", assigned_array)
