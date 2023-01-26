@@ -20,7 +20,8 @@ assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
 
 # prints out the unsorted array only
 print ("Unsorted list:", assigned_array)
+print ("\n")
 insertion_sort (assigned_array)
 
 # prints out the sorted array
-print ("Sorted list using Insertion Sort:", assigned_array)
+print ("\nSorted list using Insertion Sort:", assigned_array)
