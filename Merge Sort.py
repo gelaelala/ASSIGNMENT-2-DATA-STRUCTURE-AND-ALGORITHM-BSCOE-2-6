@@ -24,6 +24,12 @@ def merge_sort (list):
                 j += 1
             k += 1 
 
+        # transfer every element from the left array to the merged array without considering the right array
+        while i < len(left_list):
+            list[k] = left_list[i]
+            i += 1
+            k += 1 
+
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
