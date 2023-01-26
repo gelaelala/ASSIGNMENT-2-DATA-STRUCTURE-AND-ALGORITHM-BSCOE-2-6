@@ -12,7 +12,8 @@ def partition (arr, left, right): # returns the index of the pivot element
     j = right - 1 # point right of the pivot
     pivot = arr[right] # pivot element itself
 
-    print ("Pivot:", pivot) # prints out pivot element from the array
+    print ("\nPivot:", pivot) # prints out pivot element from the array
+    print (arr)
 
     while i < j: # to check if i and j crossed
         while i < right and arr[i] < pivot: # while i is not at the end of the array and the element at index i is less than the pivot element
