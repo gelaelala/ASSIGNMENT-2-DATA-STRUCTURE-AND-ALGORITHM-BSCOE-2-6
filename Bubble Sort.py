@@ -3,7 +3,7 @@
 # defined function for the Bubble Sort algorithm
 def bubble_sort (nums):
     
-    for i in range (len(nums)-1, 0, -1): # outer loop
+    for i in range (len(nums)-1, 0, -1): # outer loop/iteration
         for j in range (i): # inner loop
             if nums[j] > nums [j+1]: # to determine whether there's a need to swap the values or not
                 nums[j], nums[j+1] = nums[j+1], nums[j] #another way of swapping the variables without taking a temp variable
