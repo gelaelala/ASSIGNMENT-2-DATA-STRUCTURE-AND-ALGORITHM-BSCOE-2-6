@@ -10,6 +10,17 @@ def merge_sort (list):
         merge_sort (left_list)
         merge_sort (right_list)
 
+        # implementation of the merge step
+        i = 0 # leftmost element of the left array/left_list index
+        j = 0 # leftmost element of the right array/right_list index
+        k = 0 # index in the merged array
+
+        while i < len(left_list) and j < len(right_list):
+            if left_list[i] < right_list[j]:
+                list[k] = left_list [i] # save the value of the left array inside of merged array
+                i += 1
+                k += 1
+
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
