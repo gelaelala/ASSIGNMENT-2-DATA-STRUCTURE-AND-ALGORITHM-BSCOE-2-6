@@ -19,7 +19,15 @@ def partition (arr, left, right): # returns the index of the pivot element
         while j > left and arr[j] >= pivot:
             j -= 1 # this will move j to the left
         
-        if i < j: # to check if i and j have crossed yet
+        if i < j: # to check if i and j have crossed yet and if they didnt, we need to swap them
+            arr[i], arr[j] = arr[j], arr[i]
+
+    # to see what happens after i and j crossed
+    if arr[i] > pivot: # if array index i is greater than pivot, do another swap
+        arr[i], arr[right] = arr[right], arr[i]
+    
+    return i # to determine where to split the array to call quick sort recursively
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
+quick_sort(assigned_array, 0, len(assigned_array))
