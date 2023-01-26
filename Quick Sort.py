@@ -8,6 +8,9 @@ def quick_sort (arr, left, right): # left and right are indexes that determine t
         quick_sort(arr, partition_pos + 1, right) # calls all elements that are greater than the pivot element
 
 def partition (arr, left, right): # returns the index of the pivot element 
+    i = left # left point of the area to sort
+    j = right - 1 # point right of the pivot
+    pivot = arr[right] # pivot itself
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
