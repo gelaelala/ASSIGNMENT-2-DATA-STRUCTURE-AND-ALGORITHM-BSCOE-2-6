@@ -19,7 +19,10 @@ def merge_sort (list):
             if left_list[i] < right_list[j]:
                 list[k] = left_list [i] # save the value of the left array inside of merged array
                 i += 1
-                k += 1
+            else:
+                list[k] = right_list[j] # save the value of the right array inside of merged array
+                j += 1
+            k += 1 
 
 
 # assigned values to be sorted out using the algorithm
