@@ -12,6 +12,8 @@ def partition (arr, left, right): # returns the index of the pivot element
     j = right - 1 # point right of the pivot
     pivot = arr[right] # pivot element itself
 
+    print ("Pivot:", pivot) # prints out pivot element from the array
+
     while i < j: # to check if i and j crossed
         while i < right and arr[i] < pivot: # while i is not at the end of the array and the element at index i is less than the pivot element
             i += 1 # will move i to the right 
@@ -21,10 +23,12 @@ def partition (arr, left, right): # returns the index of the pivot element
         
         if i < j: # to check if i and j have crossed yet and if they didnt, we need to swap them
             arr[i], arr[j] = arr[j], arr[i]
+            print (arr)
 
     # to see what happens after i and j crossed
     if arr[i] > pivot: # if array index i is greater than pivot, do another swap
         arr[i], arr[right] = arr[right], arr[i]
+        print (arr)
     
     return i # to determine where to split the array to call quick sort recursively
 
