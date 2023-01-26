@@ -30,6 +30,12 @@ def merge_sort (list):
             i += 1
             k += 1 
 
+        # if it's still not at the end of the right array, transfer elements to the merged array    
+        while j < len(right_list):
+            list[k] = right_list[j]
+            j += 1 
+            k += 1
+
 
 # assigned values to be sorted out using the algorithm
 assigned_array = [79, 33, 95, 54, 97, 11, 90, 89, 64, 19]
