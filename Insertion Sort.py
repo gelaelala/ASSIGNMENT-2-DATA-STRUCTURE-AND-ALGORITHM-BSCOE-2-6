@@ -1,4 +1,4 @@
-# --- Selection Sort Algorithm (Reference: https://youtu.be/lEA31vHiry4) ---
+# --- Insertion Sort Algorithm (Reference: https://youtu.be/lEA31vHiry4) ---
 
 # defined function for the Insertion Sort algorithm
 def insertion_sort (list):
